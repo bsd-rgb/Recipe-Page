@@ -1,7 +1,30 @@
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #f3e5d7;
+  min-height: 100vh;
+  color: #5f564d;
+  font-weight: 400;
 }
 
 .attribution {
@@ -10,4 +33,124 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*
+**********************
+    RECIPE HEADER SECTION
+***********************
+*/
+
+.section-recipe {
+  padding: 9.6rem;
+}
+
+.recipe-container {
+  max-width: 53rem;
+  background-color: #fff;
+  padding: 2.6rem;
+  margin: 0 auto;
+  border-radius: 9px;
+}
+
+.recipe-img {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 2.4rem;
+}
+
+.recipe-info {
+  display: flex;
+}
+
+.recipe-title {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #312e2c;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.recipe-description {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/*
+**********************
+    PREP SECTION
+***********************
+*/
+
+.prep {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.6rem;
+  gap: 1rem;
+  font-size: 1.2rem;
+  background-color: #fff7fb;
+  border-radius: 9px;
+  margin-bottom: 2.4rem;
+}
+
+.prep span {
+  color: #7a284e;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.prep-list {
+  padding-left: 2rem;
+}
+
+/*
+**********************
+    INGREDIENTS SECTION
+***********************
+*/
+
+.ingredients .heading-tertiary {
+  border: none;
+  padding-top: 0;
+}
+
+.instruction-list li::marker {
+  color: #854632;
+  font-weight: bold;
+}
+
+/*
+**********************
+    GENERAL
+***********************
+*/
+.font--young-serif {
+  font-family: "Young Serif", sans-serif;
+}
+.font--outfit {
+  font-family: "Outfit", sans-serif;
+}
+
+.heading-tertiary {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #854632;
+  margin-bottom: 1.2rem;
+  border-top: 1px solid #eee;
+  padding-top: 1.2rem;
+}
+
+.list {
+  padding-left: 1.2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+
+.list li,
+.prep-list li {
+  padding: 0.4rem;
 }
