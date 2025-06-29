@@ -36,94 +36,8 @@ body {
 }
 
 /*
-**********************
-    RECIPE HEADER SECTION
 ***********************
-*/
-
-.section-recipe {
-  padding: 9.6rem;
-}
-
-.recipe-container {
-  max-width: 53rem;
-  background-color: #fff;
-  padding: 2.6rem;
-  margin: 0 auto;
-  border-radius: 9px;
-}
-
-.recipe-img {
-  width: 100%;
-  border-radius: 9px;
-  margin-bottom: 2.4rem;
-}
-
-.recipe-info {
-  display: flex;
-}
-
-.recipe-title {
-  font-size: 3rem;
-  font-weight: 500;
-  color: #312e2c;
-  line-height: 1;
-  margin-bottom: 2rem;
-}
-
-.recipe-description {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-/*
-**********************
-    PREP SECTION
-***********************
-*/
-
-.prep {
-  display: flex;
-  flex-direction: column;
-  padding: 1.2rem 1.6rem;
-  gap: 1rem;
-  font-size: 1.2rem;
-  background-color: #fff7fb;
-  border-radius: 9px;
-  margin-bottom: 2.4rem;
-}
-
-.prep span {
-  color: #7a284e;
-  font-weight: 600;
-  font-size: 1.4rem;
-}
-
-.prep-list {
-  padding-left: 2rem;
-}
-
-/*
-**********************
-    INGREDIENTS SECTION
-***********************
-*/
-
-.ingredients .heading-tertiary {
-  border: none;
-  padding-top: 0;
-}
-
-.instruction-list li::marker {
-  color: #854632;
-  font-weight: bold;
-}
-
-/*
-**********************
-    GENERAL
+  GENERAL
 ***********************
 */
 .font--young-serif {
@@ -150,7 +64,147 @@ body {
   margin-bottom: 1.6rem;
 }
 
+li::marker {
+  color: #854632;
+  font-weight: bold;
+}
+
 .list li,
 .prep-list li {
   padding: 0.4rem;
+}
+
+/*
+***********************
+  RECIPE HEADER SECTION
+***********************
+*/
+
+.section-recipe {
+  padding: 9.6rem;
+}
+
+.recipe-container {
+  max-width: 53rem;
+  background-color: #fff;
+  padding: 2.6rem;
+  margin: 0 auto;
+  border-radius: 9px;
+  margin-bottom: 4.8rem;
+}
+
+.recipe-img {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 2.4rem;
+}
+
+.recipe-info {
+  display: flex;
+}
+
+.recipe-title {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #312e2c;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.recipe-description {
+  font-size: 1.2rem;
+  margin-bottom: 2.4rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/*
+***********************
+  PREP SECTION
+***********************
+*/
+
+.prep {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.6rem;
+  gap: 1rem;
+  font-size: 1.2rem;
+  background-color: #fff7fb;
+  border-radius: 9px;
+  margin-bottom: 2.4rem;
+}
+
+.prep span {
+  color: #7a284e;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.prep-list {
+  padding-left: 2rem;
+}
+
+/*
+***********************
+  INGREDIENTS SECTION
+***********************
+*/
+
+.ingredients .heading-tertiary {
+  border: none;
+  padding-top: 0;
+}
+
+.instruction-list {
+  list-style-position: outside;
+
+  li {
+    padding-left: 1.3rem;
+  }
+}
+
+/*
+***********************
+  NUTRITION SECTION
+***********************
+*/
+
+/* CLEAN UP THIS SECTION!! */
+
+.nutrition-text {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.grid--2-col {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #eee;
+}
+
+.grid-item:first-child {
+  border: none;
+}
+
+.grid-item span {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+
+.nutrition-unit {
+  color: #854632;
+  font-weight: 600;
+}
+
+.nutrition-grid {
+  display: flex;
+  flex-direction: column;
 }
