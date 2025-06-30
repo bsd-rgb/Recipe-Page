@@ -30,6 +30,7 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 0 auto;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -74,6 +75,11 @@ li::marker {
   padding: 0.4rem;
 }
 
+.instruction-list li,
+.ingredient-list li {
+  padding-left: 1.3rem;
+}
+
 /*
 ***********************
   RECIPE HEADER SECTION
@@ -87,20 +93,23 @@ li::marker {
 .recipe-container {
   max-width: 53rem;
   background-color: #fff;
-  padding: 2.6rem;
   margin: 0 auto;
-  border-radius: 9px;
+  border-radius: 12px;
   margin-bottom: 4.8rem;
+}
+
+.recipe {
+  padding: 2.6rem;
+}
+
+.image-wrapper {
+  padding: 2.6rem;
 }
 
 .recipe-img {
   width: 100%;
-  border-radius: 9px;
-  margin-bottom: 2.4rem;
-}
-
-.recipe-info {
-  display: flex;
+  display: block;
+  border-radius: 12px;
 }
 
 .recipe-title {
@@ -156,14 +165,6 @@ li::marker {
   padding-top: 0;
 }
 
-.instruction-list {
-  list-style-position: outside;
-
-  li {
-    padding-left: 1.3rem;
-  }
-}
-
 /*
 ***********************
   NUTRITION SECTION
@@ -194,8 +195,8 @@ li::marker {
 }
 
 .grid-item span {
-  padding-top: 10px;
-  padding-left: 20px;
+  padding-top: 1rem;
+  padding-left: 2.4rem;
   font-size: 1.2rem;
 }
 
@@ -204,7 +205,17 @@ li::marker {
   font-weight: 600;
 }
 
-.nutrition-grid {
-  display: flex;
-  flex-direction: column;
+@media screen and (max-device-width: 375px) {
+  .recipe-img {
+    width: 100%;
+  }
+
+  .image-wrapper {
+    padding: 0;
+  }
+
+  .recipe-title {
+    line-height: 0.75;
+    font-size: 2.4rem;
+  }
 }
