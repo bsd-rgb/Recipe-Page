@@ -27,7 +27,7 @@ Mobile:
 ### Links
 
 - [Solution URL](https://github.com/bsd-rgb/Recipe-Page)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://bsd-rgb.github.io/Recipe-Page/)
 
 ## My process
 
